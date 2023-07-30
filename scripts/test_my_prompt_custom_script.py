@@ -80,7 +80,7 @@ class Script(scripts.Script):
                 proc.images.insert(0,appendimages.images[0])
                 proc.infotexts.insert(0,appendimages.infotexts[0])
             if f >= 0:
-                proc.images[0] = write_on_image(proc.images[0], "no "+prompt_array[f])
+                proc.images[0] = write_on_image(proc.images[0], f"no {prompt_array[f]}")
             else:
                 proc.images[0] = write_on_image(proc.images[0], "full prompt")
 
